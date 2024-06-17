@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - '.:/usr/share/nginx/html'
+    ports:
+      - '80:80'
+    stdin_open: true
+    tty: true
