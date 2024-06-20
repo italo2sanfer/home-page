@@ -4,38 +4,44 @@
         <meta charset="utf-8">
         <title>Peregrinis</title>
         <link rel="stylesheet" href="/static/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>        
     </head>
     <body>
-        <div id="container">
-            <div id="banner">
-                <div id="banner-bar">
-                    <ul>
-                        <li>
-                            <a href="/">
-                                <i class="fas fa-home"></i><span class="d-none d-md-inline">&nbsp;Home&nbsp;</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/italo2sanfer" target="_blank">
-                                <i class="fas fa-code"></i><span class="d-none d-md-inline">&nbsp;GitHub&nbsp;</span></a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li><i class="fas fa-globe"></i></li>
-                        <li><a href="/">&nbsp;pt&nbsp;</a></li>
-                        <li><a href="/"><u>&nbsp;en&nbsp;</u></a></li>
-                        <li><a href="/">&nbsp;fr&nbsp;</a></li>
-                    </ul>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>                  
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1Zm3.241 10.5v-.001c-.1-2.708-.992-4.904-1.89-6.452a13.919 13.919 0 0 0-1.304-1.88L12 3.11l-.047.059c-.354.425-.828 1.06-1.304 1.88-.898 1.547-1.79 3.743-1.89 6.451Zm-12.728 0h4.745c.1-3.037 1.1-5.49 2.093-7.204.39-.672.78-1.233 1.119-1.673C6.11 3.329 2.746 7 2.513 11.5Zm18.974 0C21.254 7 17.89 3.329 13.53 2.623c.339.44.729 1.001 1.119 1.673.993 1.714 1.993 4.167 2.093 7.204ZM8.787 13c.182 2.478 1.02 4.5 1.862 5.953.382.661.818 1.29 1.304 1.88l.047.057.047-.059c.354-.425.828-1.06 1.304-1.88.842-1.451 1.679-3.471 1.862-5.951Zm-1.504 0H2.552a9.505 9.505 0 0 0 7.918 8.377 15.773 15.773 0 0 1-1.119-1.673C8.413 18.085 7.47 15.807 7.283 13Zm9.434 0c-.186 2.807-1.13 5.085-2.068 6.704-.39.672-.78 1.233-1.118 1.673A9.506 9.506 0 0 0 21.447 13Z"></path></svg>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item disabled" href="#">Pt</a>
+                          <a class="dropdown-item" href="#">En</a>
+                          <a class="dropdown-item disabled" href="#">Fr</a>
+                        </div>
+                      </li>                    
+                </ul>
+              </div>
+            </nav>
+            <div class="media" style="height:90px;">
+                <img class="h-100 mr-3" src="/static/images/logo.png" alt="Generic placeholder image">
+                <div class="media-body">
+                    <blockquote class="blockquote text-right">
+                        <p class="mb-0">"Sou peregrino na terra; não escondas de mim<br>os teus mandamentos."</p>
+                        <footer class="blockquote-footer">Salmos 119:19 <cite title="Source Title">NVI</cite></footer>
+                    </blockquote>                  
                 </div>
-                <div id="banner-logo">
-                    <h1><a href="/">Peregrinis</a></h1>
-                    <blockquote class="d-none d-md-inline" cite="https://www.bible.com/pt/bible/129/PSA.119.19">
-                        "Sou peregrino na terra; não escondas de mim<br>os teus mandamentos." Salmos 119:19 NVI
-                    </blockquote>
-                </div>
-            </div>
+            </div>            
             <div id="content">
                 <div id="p-left"></div>
                 <div>
