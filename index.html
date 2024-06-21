@@ -2,9 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Peregrinis</title>
+        <link rel="icon" type="image/x-icon" href="/static/images/fivecon.ico" />
         <link rel="stylesheet" href="/static/main.css">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -12,49 +13,86 @@
     </head>
     <body>
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>                  
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1Zm3.241 10.5v-.001c-.1-2.708-.992-4.904-1.89-6.452a13.919 13.919 0 0 0-1.304-1.88L12 3.11l-.047.059c-.354.425-.828 1.06-1.304 1.88-.898 1.547-1.79 3.743-1.89 6.451Zm-12.728 0h4.745c.1-3.037 1.1-5.49 2.093-7.204.39-.672.78-1.233 1.119-1.673C6.11 3.329 2.746 7 2.513 11.5Zm18.974 0C21.254 7 17.89 3.329 13.53 2.623c.339.44.729 1.001 1.119 1.673.993 1.714 1.993 4.167 2.093 7.204ZM8.787 13c.182 2.478 1.02 4.5 1.862 5.953.382.661.818 1.29 1.304 1.88l.047.057.047-.059c.354-.425.828-1.06 1.304-1.88.842-1.451 1.679-3.471 1.862-5.951Zm-1.504 0H2.552a9.505 9.505 0 0 0 7.918 8.377 15.773 15.773 0 0 1-1.119-1.673C8.413 18.085 7.47 15.807 7.283 13Zm9.434 0c-.186 2.807-1.13 5.085-2.068 6.704-.39.672-.78 1.233-1.118 1.673A9.506 9.506 0 0 0 21.447 13Z"></path></svg>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item disabled" href="#">Pt</a>
-                          <a class="dropdown-item" href="#">En</a>
-                          <a class="dropdown-item disabled" href="#">Fr</a>
-                        </div>
-                      </li>                    
-                </ul>
-              </div>
-            </nav>
-            <div class="media" style="height:90px;">
-                <img class="h-100 mr-3" src="/static/images/logo.png" alt="Generic placeholder image">
-                <div class="media-body">
-                    <blockquote class="blockquote text-right">
-                        <p class="mb-0">"Sou peregrino na terra; não escondas de mim<br>os teus mandamentos."</p>
-                        <footer class="blockquote-footer">Salmos 119:19 <cite title="Source Title">NVI</cite></footer>
-                    </blockquote>                  
+            <nav class="navbar navbar-expand-lg bg-white fit">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>                  
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1Zm3.241 10.5v-.001c-.1-2.708-.992-4.904-1.89-6.452a13.919 13.919 0 0 0-1.304-1.88L12 3.11l-.047.059c-.354.425-.828 1.06-1.304 1.88-.898 1.547-1.79 3.743-1.89 6.451Zm-12.728 0h4.745c.1-3.037 1.1-5.49 2.093-7.204.39-.672.78-1.233 1.119-1.673C6.11 3.329 2.746 7 2.513 11.5Zm18.974 0C21.254 7 17.89 3.329 13.53 2.623c.339.44.729 1.001 1.119 1.673.993 1.714 1.993 4.167 2.093 7.204ZM8.787 13c.182 2.478 1.02 4.5 1.862 5.953.382.661.818 1.29 1.304 1.88l.047.057.047-.059c.354-.425.828-1.06 1.304-1.88.842-1.451 1.679-3.471 1.862-5.951Zm-1.504 0H2.552a9.505 9.505 0 0 0 7.918 8.377 15.773 15.773 0 0 1-1.119-1.673C8.413 18.085 7.47 15.807 7.283 13Zm9.434 0c-.186 2.807-1.13 5.085-2.068 6.704-.39.672-.78 1.233-1.118 1.673A9.506 9.506 0 0 0 21.447 13Z"></path></svg>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item disabled" href="#">Pt</a>
+                            <a class="dropdown-item" href="#">En</a>
+                            <a class="dropdown-item disabled" href="#">Fr</a>
+                            </div>
+                        </li>                    
+                    </ul>
                 </div>
-            </div>            
-            <div id="content">
-                <div id="p-left"></div>
-                <div>
-                    <h1>Welcome</h1>
+            </nav>
+            <div style="background-color:rgb(229 226 195)">
+                <div class="media w-80"
+                    style="width:80%; height:90px; position:relative; left:10%; display:flex; align-items:center;">
+                    <img class="h-100 mr-3 p-1" src="/static/images/logo-azul.png" alt="Generic placeholder image">
+                    <h1>Peregrinis</h1>
+                    <div class="media-body">
+                        <blockquote class="blockquote text-right">
+                            <p class="mb-0">"Sou peregrino na terra; não escondas de mim<br>os teus mandamentos."</p>
+                            <footer class="blockquote-footer">Salmos 119:19 <cite title="Source Title">NVI</cite></footer>
+                        </blockquote>                  
+                    </div>
+                </div>
+            </div>
+            <ul class="nav nav-tabs mt-3 fit" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="italo2sanfer-tab" data-toggle="tab" href="#italo2sanfer" role="tab" aria-controls="italo2sanfer" aria-selected="false">@italo2sanfer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="products-tab" data-toggle="tab" href="#products" role="tab" aria-controls="products" aria-selected="false">Products</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-3 fit" id="myTabContent">
+                <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
                     <section>
-                        <h3>About Peregrinis</h3>
                         <p>An organization, a proposal, an idea that creates other ideas. As a Christian,
                             I believe in a new heaven and a new earth where we will go to be with the author of my salvation.
                             On this earth we are pilgrims. How should we walk? What can we do to help each other?
                         </p>
-                    </section>                    
+                    </section>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+                <div class="tab-pane fade" id="italo2sanfer" role="tabpanel" aria-labelledby="italo2sanfer-tab">
                     <section>
-                        <h3>About Italo</h3>
+                        <div>
+                            <ul class="ul-style">
+                                <li><cite>Italo dos Santos Ferreira</cite>,</li>
+                                <li>Devops and project thinker.</li>                                    
+                            </ul>
+                            <picture>
+                                <img class="rounded-circle" style="max-height: 90px;" src="/static/images/foto.png" alt="Italo">
+                            </picture>
+                            <ul class="ul-style">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M21,3H3v18h18V3z M9,17H6.477v-7H9V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2 c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302 s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977C13.93,10.407,14.581,10,15.802,10 C17.023,10,18,10.977,18,13.174V17z"></path>
+                                    </svg>
+                                    <a href="https://www.linkedin.com/in/italo2sanfer/" target="_blank">italo2sanfer</a>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M 7.5 1 C 3.910156 1 1 3.90625 1 7.488281 C 1 10.355469 2.863281 12.789063 5.445313 13.648438 C 5.769531 13.707031 6 13.375 6 13.125 C 6 12.972656 6.003906 12.789063 6 12.25 C 4.191406 12.640625 3.625 11.375 3.625 11.375 C 3.328125 10.625 2.96875 10.410156 2.96875 10.410156 C 2.378906 10.007813 3.011719 10.019531 3.011719 10.019531 C 3.664063 10.0625 4 10.625 4 10.625 C 4.5 11.5 5.628906 11.414063 6 11.25 C 6 10.851563 6.042969 10.5625 6.152344 10.378906 C 4.109375 10.019531 2.996094 8.839844 3 7.207031 C 3.003906 6.242188 3.335938 5.492188 3.875 4.9375 C 3.640625 4.640625 3.480469 3.625 3.960938 3 C 5.167969 3 5.886719 3.871094 5.886719 3.871094 C 5.886719 3.871094 6.453125 3.625 7.496094 3.625 C 8.542969 3.625 9.105469 3.859375 9.105469 3.859375 C 9.105469 3.859375 9.828125 3 11.035156 3 C 11.515625 3.625 11.355469 4.640625 11.167969 4.917969 C 11.683594 5.460938 12 6.210938 12 7.207031 C 12 8.839844 10.890625 10.019531 8.851563 10.375 C 8.980469 10.570313 9 10.84375 9 11.25 C 9 12.117188 9 12.910156 9 13.125 C 9 13.375 9.226563 13.710938 9.558594 13.648438 C 12.140625 12.785156 14 10.355469 14 7.488281 C 14 3.90625 11.089844 1 7.5 1 Z"></path>
+                                    </svg>
+                                    <a href="https://github.com/italo2sanfer/" target="_blank">italo2sanfer</a>
+                                </li>
+                            </ul>
+                        </div>
                         <p>With over 10 years of experience in analysis and development of information systems.
                             I deliver satisfactory software solutions, search for new technologies to improve processes,
                             and work with infrastructure services, acting as DevOps.
@@ -66,9 +104,11 @@
                             <a href="https://www.linkedin.com/in/italo2sanfer/" target="_blank">LinkedIn</a>.
                         </p>
                     </section>
-                    <h3>Products</h3>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+                <div class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="products-tab">
                     <div class="d-flex flex-wrap justify-content-center">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card mr-2" style="width: 18rem;">
                             <div class="card-body">
                                 <h5 class="card-title">This page</h5>
                                 <a class="badge badge-primary text-white" href="https://github.com/italo2sanfer/abwork/tree/main/iac/terraform/gcp/gce1" target="_blank">Similar Code</a>
@@ -77,8 +117,8 @@
                                     with <span class="text-danger">Terraform</span>. We use <span class="text-danger">IaC (Docker)</span> in all ours projects.
                                 </p>
                             </div>
-                          </div>
-                          <div class="card" style="width: 18rem;">
+                        </div>
+                        <div class="card mr-2" style="width: 18rem;">
                             <div class="card-body">
                                 <h5 class="card-title">Hope form</h5>
                                 <a class="badge badge-primary text-white" href="https://github.com/italo2sanfer/abwork/tree/main/golang1" target="_blank">Code</a>
@@ -89,37 +129,26 @@
                                     and is running in <span class="text-danger">Google Cloud Run</span>.
                                 </p>
                             </div>
-                          </div>
+                        </div>
                     </div>
-                    <br><br><br><br><br><br><br><br><br><br><br>
-                </div>
-                <div id="p-right">
-                    <picture>
-                        <img src="/static/images/foto.png" alt="Italo" style="width:100%">
-                    </picture>
-                    <small><cite>Italo dos Santos Ferreira</cite>, Devops and project thinker.</small>
-                    <ul class="sem-marcadores">
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24">
-                                <path d="M21,3H3v18h18V3z M9,17H6.477v-7H9V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2 c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302 s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977C13.93,10.407,14.581,10,15.802,10 C17.023,10,18,10.977,18,13.174V17z"></path>
-                            </svg>
-                            <a href="https://www.linkedin.com/in/italo2sanfer/" target="_blank">italo2sanfer</a>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 16 16">
-                                <path d="M 7.5 1 C 3.910156 1 1 3.90625 1 7.488281 C 1 10.355469 2.863281 12.789063 5.445313 13.648438 C 5.769531 13.707031 6 13.375 6 13.125 C 6 12.972656 6.003906 12.789063 6 12.25 C 4.191406 12.640625 3.625 11.375 3.625 11.375 C 3.328125 10.625 2.96875 10.410156 2.96875 10.410156 C 2.378906 10.007813 3.011719 10.019531 3.011719 10.019531 C 3.664063 10.0625 4 10.625 4 10.625 C 4.5 11.5 5.628906 11.414063 6 11.25 C 6 10.851563 6.042969 10.5625 6.152344 10.378906 C 4.109375 10.019531 2.996094 8.839844 3 7.207031 C 3.003906 6.242188 3.335938 5.492188 3.875 4.9375 C 3.640625 4.640625 3.480469 3.625 3.960938 3 C 5.167969 3 5.886719 3.871094 5.886719 3.871094 C 5.886719 3.871094 6.453125 3.625 7.496094 3.625 C 8.542969 3.625 9.105469 3.859375 9.105469 3.859375 C 9.105469 3.859375 9.828125 3 11.035156 3 C 11.515625 3.625 11.355469 4.640625 11.167969 4.917969 C 11.683594 5.460938 12 6.210938 12 7.207031 C 12 8.839844 10.890625 10.019531 8.851563 10.375 C 8.980469 10.570313 9 10.84375 9 11.25 C 9 12.117188 9 12.910156 9 13.125 C 9 13.375 9.226563 13.710938 9.558594 13.648438 C 12.140625 12.785156 14 10.355469 14 7.488281 C 14 3.90625 11.089844 1 7.5 1 Z"></path>
-                            </svg>
-                            <a href="https://github.com/italo2sanfer/" target="_blank">italo2sanfer</a>
-                        </li>
-                    </ul>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
             </div>
-            <footer>
-                <ul class="d-flex flex-wrap justify-content-center">
-                    <li><span class="fas fa-copyright" aria-hidden="true"></span>&nbsp;2024 Peregrinis&nbsp;</li>
-                    <li><span class="fas fa-server" aria-hidden="true"></span>&nbsp;Google Cloud&nbsp;</li>
-                </ul>
-            </footer>
+            <div style="background-color:rgb(229 226 195)">
+                <footer class="fit">
+                    <ul class="d-flex flex-wrap justify-content-around ul-style">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z">                            
+                                </path></svg>
+                            &nbsp;2024 Peregrinis&nbsp;</li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M16 10.75v2.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-2.5C0 9.784.784 9 1.75 9h12.5c.966 0 1.75.784 1.75 1.75Zm0-8v2.5A1.75 1.75 0 0 1 14.25 7H1.75A1.75 1.75 0 0 1 0 5.25v-2.5C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75Zm-1.75-.25H1.75a.25.25 0 0 0-.25.25v2.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-2.5a.25.25 0 0 0-.25-.25Zm0 8H1.75a.25.25 0 0 0-.25.25v2.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-2.5a.25.25 0 0 0-.25-.25Z">                            
+                            </path></svg>
+                            &nbsp;Google Cloud&nbsp;
+                        </li>
+                    </ul>
+                </footer>
+            </div>
         </div>
     </body>
 </html>
